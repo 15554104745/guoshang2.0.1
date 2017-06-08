@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="GSShopBaseSiftCollectionBottomFooter">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grx-JS-pfm">
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="重置">
+                        <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="resertButtonClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="O5w-CZ-qBh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzb-d5-cCU">
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="commitButtonClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="IOg-yR-qiX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dzb-d5-cCU" firstAttribute="leading" secondItem="Grx-JS-pfm" secondAttribute="trailing" id="9cr-dw-Khi"/>
+                <constraint firstAttribute="bottom" secondItem="Grx-JS-pfm" secondAttribute="bottom" id="EoL-4y-dJe"/>
+                <constraint firstItem="dzb-d5-cCU" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="JQJ-5q-9Mn"/>
+                <constraint firstAttribute="bottom" secondItem="dzb-d5-cCU" secondAttribute="bottom" id="U4u-NY-JPX"/>
+                <constraint firstItem="dzb-d5-cCU" firstAttribute="width" secondItem="Grx-JS-pfm" secondAttribute="width" id="cfr-BT-6po"/>
+                <constraint firstItem="Grx-JS-pfm" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="eC5-60-ruc"/>
+                <constraint firstAttribute="trailing" secondItem="dzb-d5-cCU" secondAttribute="trailing" id="p8o-HQ-Ld8"/>
+                <constraint firstItem="Grx-JS-pfm" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="xIc-5z-muc"/>
+            </constraints>
+            <point key="canvasLocation" x="32" y="98"/>
+        </collectionReusableView>
+    </objects>
+</document>

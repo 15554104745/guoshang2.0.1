@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecommendCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="200"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简约女院学生双肩背包女包帆布背包" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLz-Fn-pKe">
+                        <rect key="frame" x="0.0" y="136" width="140" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥115.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5k-NR-IvP">
+                        <rect key="frame" x="0.0" y="174" width="140" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="wyF-CV-dRO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TdQ-NJ-wKO">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="135"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="TdQ-NJ-wKO" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="96G-ID-0Ui"/>
+                <constraint firstAttribute="trailing" secondItem="FLz-Fn-pKe" secondAttribute="trailing" id="RtT-BJ-hsP"/>
+                <constraint firstItem="M5k-NR-IvP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xe9-1x-4xm"/>
+                <constraint firstItem="FLz-Fn-pKe" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="35:200" id="gSa-Qi-EJZ"/>
+                <constraint firstAttribute="bottom" secondItem="M5k-NR-IvP" secondAttribute="bottom" id="hEM-DL-XEv"/>
+                <constraint firstItem="TdQ-NJ-wKO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hFA-SC-4j4"/>
+                <constraint firstItem="FLz-Fn-pKe" firstAttribute="top" secondItem="TdQ-NJ-wKO" secondAttribute="bottom" constant="1" id="imN-dP-gUV"/>
+                <constraint firstItem="TdQ-NJ-wKO" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="135:200" id="oKy-HV-WMH"/>
+                <constraint firstItem="FLz-Fn-pKe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vnE-Wg-rN9"/>
+                <constraint firstAttribute="trailing" secondItem="M5k-NR-IvP" secondAttribute="trailing" id="vpq-Rd-tiQ"/>
+                <constraint firstItem="TdQ-NJ-wKO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zPI-1r-6o9"/>
+            </constraints>
+            <size key="customSize" width="151" height="236"/>
+            <connections>
+                <outlet property="image" destination="TdQ-NJ-wKO" id="uPO-je-Cu2"/>
+                <outlet property="lab_desc" destination="FLz-Fn-pKe" id="sPO-Tn-agC"/>
+                <outlet property="lab_price" destination="M5k-NR-IvP" id="hec-Zb-JJY"/>
+            </connections>
+            <point key="canvasLocation" x="323" y="281"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="85" id="Epd-3z-vkM" customClass="GSMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Epd-3z-vkM" id="QUi-rh-9cN">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="买家已付款，请及时关注账户" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORu-Il-np9">
+                        <rect key="frame" x="8" y="8" width="313" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Ojp-aK-VlY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chimaxuanze" translatesAutoresizingMaskIntoConstraints="NO" id="Xsc-Nm-adp">
+                        <rect key="frame" x="329" y="11" width="10" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="QNc-vO-yGH"/>
+                            <constraint firstAttribute="width" constant="10" id="tFY-AL-sB4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-10-12       13:25:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHq-b0-cRY">
+                        <rect key="frame" x="8" y="45" width="266" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="VaF-Qx-DED"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vq8-qA-zbf">
+                        <rect key="frame" x="317" y="46" width="22" height="22"/>
+                        <color key="backgroundColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="JLy-HZ-fMI"/>
+                            <constraint firstAttribute="width" constant="22" id="KvR-IK-shV"/>
+                        </constraints>
+                        <state key="normal" image="mc_delete"/>
+                        <connections>
+                            <action selector="deleteMessageAction:" destination="Epd-3z-vkM" eventType="touchUpInside" id="D9q-F9-kG8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LB-pi-SzK">
+                        <rect key="frame" x="282" y="46" width="22" height="22"/>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.2274509804" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="Ftm-WE-ajo"/>
+                            <constraint firstAttribute="height" constant="22" id="Xa5-r5-Q40"/>
+                        </constraints>
+                        <state key="normal" image="mc_message"/>
+                        <connections>
+                            <action selector="readMessgeAction:" destination="Epd-3z-vkM" eventType="touchUpInside" id="ncg-73-ghD"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DHq-b0-cRY" firstAttribute="leading" secondItem="QUi-rh-9cN" secondAttribute="leadingMargin" id="5Wz-ku-F5W"/>
+                    <constraint firstItem="Vq8-qA-zbf" firstAttribute="leading" secondItem="4LB-pi-SzK" secondAttribute="trailing" constant="13" id="6WI-gb-PcV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4LB-pi-SzK" secondAttribute="bottom" constant="8" id="ATl-J0-mkV"/>
+                    <constraint firstItem="ORu-Il-np9" firstAttribute="leading" secondItem="QUi-rh-9cN" secondAttribute="leadingMargin" id="FQQ-ZH-0lT"/>
+                    <constraint firstItem="Xsc-Nm-adp" firstAttribute="trailing" secondItem="QUi-rh-9cN" secondAttribute="trailingMargin" id="I0W-D3-Qkz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Vq8-qA-zbf" secondAttribute="bottom" constant="8" id="K9p-3W-PT8"/>
+                    <constraint firstItem="DHq-b0-cRY" firstAttribute="top" secondItem="ORu-Il-np9" secondAttribute="bottom" constant="16" id="QKG-MV-Bqm"/>
+                    <constraint firstItem="Xsc-Nm-adp" firstAttribute="top" secondItem="QUi-rh-9cN" secondAttribute="topMargin" constant="3" id="SSV-6K-DNo"/>
+                    <constraint firstItem="ORu-Il-np9" firstAttribute="top" secondItem="QUi-rh-9cN" secondAttribute="topMargin" id="VCh-tM-PNE"/>
+                    <constraint firstItem="Xsc-Nm-adp" firstAttribute="leading" secondItem="ORu-Il-np9" secondAttribute="trailing" constant="8" id="ZeN-Wk-XZJ"/>
+                    <constraint firstItem="Vq8-qA-zbf" firstAttribute="trailing" secondItem="QUi-rh-9cN" secondAttribute="trailingMargin" id="cei-AP-xho"/>
+                    <constraint firstItem="4LB-pi-SzK" firstAttribute="leading" secondItem="DHq-b0-cRY" secondAttribute="trailing" constant="8" id="d4o-KL-a9y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deleteMessage" destination="Vq8-qA-zbf" id="Vhy-8A-3WE"/>
+                <outlet property="messageLabel" destination="ORu-Il-np9" id="B5U-NG-w8p"/>
+                <outlet property="readerMessage" destination="4LB-pi-SzK" id="xeC-ex-YDB"/>
+                <outlet property="timeLabel" destination="DHq-b0-cRY" id="ps3-m4-EC0"/>
+            </connections>
+            <point key="canvasLocation" x="419.5" y="357.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chimaxuanze" width="9" height="17"/>
+        <image name="mc_delete" width="13" height="13"/>
+        <image name="mc_message" width="14" height="10"/>
+    </resources>
+</document>

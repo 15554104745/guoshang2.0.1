@@ -1,0 +1,18 @@
+//
+//  LimitingViewController.h
+//  guoshang
+//
+//  Created by 宗丽娜 on 16/3/30.
+//  Copyright © 2016年 hi. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface LimitingViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (nonatomic,strong)NSMutableArray *dataArray;
+@property (nonatomic,strong)UITableView *myTableView;
+@property(nonatomic,weak)UIViewController * popView;
+@property(nonatomic,assign)NSInteger page;
+
+
+@end

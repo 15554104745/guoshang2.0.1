@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QIs-6u-SW8" customClass="STPhotoActionSheet">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04h-oG-E3H">
+                    <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                    <subviews>
+                        <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07E-Ee-P6v">
+                            <rect key="frame" x="0.0" y="162" width="600" height="1"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="DK5-kj-p2R"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68c-6I-IYN">
+                            <rect key="frame" x="0.0" y="209" width="600" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="5z8-Rr-iPC"/>
+                            </constraints>
+                            <state key="normal" title="相册">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnPhotoLibrary_Click:" destination="QIs-6u-SW8" eventType="touchUpInside" id="Kjf-rD-Ouh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxQ-c7-6Qr">
+                            <rect key="frame" x="0.0" y="163" width="600" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="PL1-TO-UnJ"/>
+                            </constraints>
+                            <state key="normal" title="拍照">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnCamera_Click:" destination="QIs-6u-SW8" eventType="touchUpInside" id="vLR-n6-obU"/>
+                            </connections>
+                        </button>
+                        <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pz-3s-uyp">
+                            <rect key="frame" x="0.0" y="208" width="600" height="1"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="dDG-vn-J97"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35q-aK-02r">
+                            <rect key="frame" x="0.0" y="255" width="600" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="9tY-0R-kAW"/>
+                            </constraints>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnCancel_Click:" destination="QIs-6u-SW8" eventType="touchUpInside" id="Bj4-ng-S7i"/>
+                            </connections>
+                        </button>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rMh-cc-Gic">
+                            <rect key="frame" x="0.0" y="3" width="600" height="155"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="155" id="yHA-4a-JS1"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="clY-mI-9gH">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="QIs-6u-SW8" id="Kyi-JF-sCh"/>
+                                <outlet property="delegate" destination="QIs-6u-SW8" id="0xx-0U-WoM"/>
+                            </connections>
+                        </collectionView>
+                        <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTn-cg-nWd">
+                            <rect key="frame" x="0.0" y="254" width="600" height="1"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="FRs-6b-8Ai"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="07E-Ee-P6v" firstAttribute="top" secondItem="rMh-cc-Gic" secondAttribute="bottom" constant="4" id="0xY-Bs-RFn"/>
+                        <constraint firstItem="rMh-cc-Gic" firstAttribute="leading" secondItem="04h-oG-E3H" secondAttribute="leading" id="2qm-6F-jGd"/>
+                        <constraint firstAttribute="bottom" secondItem="35q-aK-02r" secondAttribute="bottom" id="3Eq-iK-Bc2"/>
+                        <constraint firstItem="35q-aK-02r" firstAttribute="top" secondItem="XTn-cg-nWd" secondAttribute="bottom" id="3jB-K7-HwB"/>
+                        <constraint firstItem="XTn-cg-nWd" firstAttribute="leading" secondItem="04h-oG-E3H" secondAttribute="leading" id="5Hs-tE-xHI"/>
+                        <constraint firstItem="8pz-3s-uyp" firstAttribute="leading" secondItem="04h-oG-E3H" secondAttribute="leading" id="8TX-rH-G7p"/>
+                        <constraint firstItem="rMh-cc-Gic" firstAttribute="top" secondItem="04h-oG-E3H" secondAttribute="top" constant="3" id="9QV-fW-Ov7"/>
+                        <constraint firstItem="35q-aK-02r" firstAttribute="leading" secondItem="04h-oG-E3H" secondAttribute="leading" id="9SX-5o-RG9"/>
+                        <constraint firstItem="68c-6I-IYN" firstAttribute="leading" secondItem="04h-oG-E3H" secondAttribute="leading" id="CvF-9D-tJC"/>
+                        <constraint firstAttribute="trailing" secondItem="68c-6I-IYN" secondAttribute="trailing" id="LMM-ba-bnJ"/>
+                        <constraint firstAttribute="trailing" secondItem="35q-aK-02r" secondAttribute="trailing" id="Mod-UX-Q7v"/>
+                        <constraint firstItem="07E-Ee-P6v" firstAttribute="leading" secondItem="04h-oG-E3H" secondAttribute="leading" id="Okm-zB-9vv"/>
+                        <constraint firstAttribute="trailing" secondItem="8pz-3s-uyp" secondAttribute="trailing" id="PkH-yn-kIq"/>
+                        <constraint firstAttribute="trailing" secondItem="07E-Ee-P6v" secondAttribute="trailing" id="RTd-dC-1Ie"/>
+                        <constraint firstItem="68c-6I-IYN" firstAttribute="top" secondItem="8pz-3s-uyp" secondAttribute="bottom" id="RZt-JC-FhY"/>
+                        <constraint firstItem="XTn-cg-nWd" firstAttribute="top" secondItem="68c-6I-IYN" secondAttribute="bottom" id="T1K-Yi-usn"/>
+                        <constraint firstItem="yxQ-c7-6Qr" firstAttribute="leading" secondItem="04h-oG-E3H" secondAttribute="leading" id="WJn-QZ-42u"/>
+                        <constraint firstAttribute="trailing" secondItem="rMh-cc-Gic" secondAttribute="trailing" id="Xq2-ef-dZ9"/>
+                        <constraint firstItem="yxQ-c7-6Qr" firstAttribute="top" secondItem="07E-Ee-P6v" secondAttribute="bottom" id="fAV-tu-jQl"/>
+                        <constraint firstAttribute="trailing" secondItem="XTn-cg-nWd" secondAttribute="trailing" id="jIV-tT-qtV"/>
+                        <constraint firstAttribute="height" constant="300" id="ka5-ES-yDd"/>
+                        <constraint firstAttribute="trailing" secondItem="yxQ-c7-6Qr" secondAttribute="trailing" id="rl7-ls-leV"/>
+                        <constraint firstItem="8pz-3s-uyp" firstAttribute="top" secondItem="yxQ-c7-6Qr" secondAttribute="bottom" id="sI8-GS-pDj"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ka5-ES-yDd"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="04h-oG-E3H" secondAttribute="bottom" id="Rtk-gh-0kH"/>
+                <constraint firstItem="04h-oG-E3H" firstAttribute="leading" secondItem="QIs-6u-SW8" secondAttribute="leading" id="Wcp-Qs-c55"/>
+                <constraint firstAttribute="trailing" secondItem="04h-oG-E3H" secondAttribute="trailing" id="bcI-gQ-iZV"/>
+            </constraints>
+            <connections>
+                <outlet property="baseView" destination="04h-oG-E3H" id="7YG-dU-FbC"/>
+                <outlet property="btnCamera" destination="yxQ-c7-6Qr" id="9t7-G0-YvZ"/>
+                <outlet property="collectionView" destination="rMh-cc-Gic" id="Dmt-vu-4TR"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="-20"/>
+        </view>
+    </objects>
+</document>

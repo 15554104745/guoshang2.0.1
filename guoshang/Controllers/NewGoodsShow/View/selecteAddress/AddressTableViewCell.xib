@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AddressTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="re_icon_location" translatesAutoresizingMaskIntoConstraints="NO" id="E6p-yL-597">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="UiZ-Hl-i8C"/>
+                            <constraint firstAttribute="height" constant="19" id="cAp-8Z-w0D"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWS-WJ-BA2">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="HWS-WJ-BA2" secondAttribute="bottom" id="2E3-Uz-oxZ"/>
+                    <constraint firstAttribute="trailing" secondItem="HWS-WJ-BA2" secondAttribute="trailing" id="Qrt-0X-dY4"/>
+                    <constraint firstItem="HWS-WJ-BA2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Sg5-dL-PCy"/>
+                    <constraint firstItem="HWS-WJ-BA2" firstAttribute="leading" secondItem="E6p-yL-597" secondAttribute="trailing" constant="8" id="Ybh-l7-nQG"/>
+                    <constraint firstItem="E6p-yL-597" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Yn4-Fj-vRm"/>
+                    <constraint firstItem="E6p-yL-597" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ZPx-AO-fPv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="HWS-WJ-BA2" id="Y1W-OH-GIq"/>
+                <outlet property="selectFlag" destination="E6p-yL-597" id="4fL-76-3cd"/>
+            </connections>
+            <point key="canvasLocation" x="471" y="437"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="re_icon_location" width="13" height="18"/>
+    </resources>
+</document>

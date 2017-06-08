@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GSChooseAddressInfoCell" rowHeight="97" id="KGk-i7-Jjw" customClass="GSChooseAddressInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="130****3131" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKC-VN-ftr">
+                        <rect key="frame" x="87" y="10" width="82" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收件人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-P7-M9i">
+                        <rect key="frame" x="25" y="10" width="42" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address_icon_desel" translatesAutoresizingMaskIntoConstraints="NO" id="YE5-bq-PWC">
+                        <rect key="frame" x="5" y="35" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="F4O-w4-HcI"/>
+                            <constraint firstAttribute="height" constant="20" id="OmQ-4p-Qk1"/>
+                            <constraint firstAttribute="height" constant="15" id="PpN-5B-Jmu"/>
+                            <constraint firstAttribute="width" constant="15" id="WL5-0P-WZ7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="F4O-w4-HcI"/>
+                                <exclude reference="OmQ-4p-Qk1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="F4O-w4-HcI"/>
+                                <include reference="OmQ-4p-Qk1"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="山东省济南市高新区鲁商国奥城3号楼1802山东省济南市高新区鲁商国奥城3号楼1802山东省济南市高新区鲁商国奥城3号楼1802山东省济南市高新区鲁商国奥城3号楼1802山东省济南市高新区鲁商国奥城3号楼1802" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCE-Bp-FK4">
+                        <rect key="frame" x="25" y="37" width="264" height="49.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iKC-VN-ftr" firstAttribute="leading" secondItem="gQb-P7-M9i" secondAttribute="trailing" constant="20" id="68g-S3-R39"/>
+                    <constraint firstItem="iKC-VN-ftr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="H4G-xK-VNG"/>
+                    <constraint firstItem="WCE-Bp-FK4" firstAttribute="width" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="width" constant="-45" id="N8y-Ws-5Xy"/>
+                    <constraint firstItem="WCE-Bp-FK4" firstAttribute="leading" secondItem="gQb-P7-M9i" secondAttribute="leading" id="PAF-As-bAU"/>
+                    <constraint firstAttribute="bottom" secondItem="WCE-Bp-FK4" secondAttribute="bottom" constant="10" id="cCy-MC-EJM"/>
+                    <constraint firstItem="WCE-Bp-FK4" firstAttribute="top" secondItem="gQb-P7-M9i" secondAttribute="bottom" constant="10" id="gZG-gm-qNZ"/>
+                    <constraint firstItem="gQb-P7-M9i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="hxk-I1-f9T"/>
+                    <constraint firstItem="YE5-bq-PWC" firstAttribute="top" secondItem="gQb-P7-M9i" secondAttribute="bottom" constant="8" id="mAY-ra-YuG"/>
+                    <constraint firstItem="YE5-bq-PWC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="mvO-JL-AB5"/>
+                    <constraint firstItem="gQb-P7-M9i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="nmT-hT-XX3"/>
+                    <constraint firstItem="WCE-Bp-FK4" firstAttribute="top" secondItem="iKC-VN-ftr" secondAttribute="bottom" constant="10" id="rpP-wm-aDD"/>
+                    <constraint firstItem="YE5-bq-PWC" firstAttribute="top" secondItem="WCE-Bp-FK4" secondAttribute="top" constant="-2" id="xbm-B5-gQ1"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="mAY-ra-YuG"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="tintColor" red="0.90588235289999997" green="0.2156862745" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="addressLabel" destination="WCE-Bp-FK4" id="6DF-2p-HBJ"/>
+                <outlet property="nameLabel" destination="gQb-P7-M9i" id="U7Y-93-Ma7"/>
+                <outlet property="phoneLabel" destination="iKC-VN-ftr" id="2wJ-qu-w6m"/>
+            </connections>
+            <point key="canvasLocation" x="188" y="187.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="address_icon_desel" width="15" height="15"/>
+    </resources>
+</document>

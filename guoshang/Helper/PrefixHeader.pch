@@ -1,0 +1,131 @@
+//
+//  PrefixHeader.pch
+//  guoshang
+//
+//  Created by 张涛 on 16/2/22.
+//  Copyright © 2016年 hi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "UIBarButtonItem+GSBarButtonItem.h"
+#import "PopViewController.h"
+#import "LNLabel.h"
+#import "LNButton.h"
+#import "HttpTool.h"
+#import "NSString+Encrypt3DESandBase64.h"
+#import "JSONModel.h"
+#import "UIButton+AFNetworking.h"
+#import "UIImage+AFNetworking.h"
+#import "UIImageView+AFNetworking.h"
+#import "GoodsModel.h"
+#import "AllOrderModel.h"
+#import "AlertTool.h"
+#import "MJRefresh.h"
+#import "GoodsDetailModel.h"
+#import "UMSocial.h"
+#import "NSDictionary+SaltString.h"
+#import "UIView+Helper.h"
+#import "MJExtension.h"
+#import "UIColor+Hex.h"
+#import "CKAlertViewController.h"
+
+typedef NS_ENUM(NSInteger, GSChackOutOrderType) {
+    GSChackOutOrderTypeDefault = 0,
+    GSChackOutOrderTypeGuoBi,
+    GSChackOutOrderTypeBusiness,
+    GSChackOutOrderTypeGroup,
+};
+
+//#if 1
+//#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+//#else
+//#define NSLog(FORMAT, ...) nil
+//#endif
+
+
+#define MAS_SHORTHAND
+//16进制RGB的颜色转换
+#define kUIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+//底色的颜色
+#define MyColor   [UIColor colorWithRed:247/255.0 green:247/255.0 blue:247/255.0 alpha:1.0]
+
+#define WordColor  [UIColor colorWithRed:83/255.0 green:83/255.0 blue:83/255.0 alpha:1.0]
+
+#define NewRedColor [UIColor colorWithRed:231/255.0 green:55/255.0 blue:54/255.0 alpha:1.0]
+
+#define WhiteColor [UIColor whiteColor]
+
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+//商家版navigationBar基本色
+#define GSNavColor [UIColor colorWithRed:154.0/255.0 green:154.0/255.0 blue:154.0/255.0 alpha:1.0]
+//屏幕宽高
+#define Width [UIScreen mainScreen].bounds.size.width
+
+#define Height [UIScreen mainScreen].bounds.size.height
+
+#define Podding ([UIScreen mainScreen].bounds.size.width -30)/4.0
+/**
+ *  进货宝轮播图宽度
+ */       
+#define JHHeight [UIScreen mainScreen].bounds.size.width/1.915 + 30
+
+#define BaseURL @"https://www.ibg100.com/Apis/index.php"
+//#define BaseURL @"http://www.ibg100.com/Apiss/index.php"
+//#define BaseURL @"http://new.ibg100.com/Apis/index.php"
+
+//#define BaseURL @"http://192.168.1.97/Apis/index.php"
+//#define BaseURL @"http://124.133.255.187:60080/Apis/index.php"
+//#define BaseURL @"http://guoshang.libaocai.com/Apis/index.php"
+
+
+
+
+#define Alipay_seller_ID @"guoshangyigou@ibg100.com"
+#define UserTypeString   @"userType"
+#define UserTypeDefault  @"userTypeDefault"
+#define UserTypeBusiness @"userTypeBusiness"
+#define BaseURLTuiGuang  @"http://www.ibg100.com/mobile/index.php"
+#define textColour [UIColor colorWithRed:20.0/255.0 green:22.0/255.0 blue:23.0/255.0 alpha:1]
+#define rgba(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define ImageBaseURL @"http://www.ibg100.com/"
+#define URLDependByBaseURL(URL) [NSString stringWithFormat:@"%@%@",BaseURL,URL]
+#define TuiGuangDependByBaseURL(URL) [NSString stringWithFormat:@"%@%@",BaseURLTuiGuang,URL]
+
+#define ViewController_in_Storyboard(storyboardName,storyboardID) [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateViewControllerWithIdentifier:storyboardID]
+
+#define ShowBuidingAlert UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"该功能正在施工中,敬请期待!" delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil, nil];\
+[alertView show];
+
+//字符串判空
+#define IsNilOrNull(_ref)   (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
+
+//支付宝 key
+#define KEY @"51kuaiting51kuaiting51kuaiting"
+
+#define UserType [[NSUserDefaults standardUserDefaults]objectForKey:@"userType"]
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+//商家版分类管理  绿色
+#define GS_Manager_Class_GreenColor  COLOR(15, 131, 255, 1)
+#define IsBusinessUser [[NSUserDefaults standardUserDefaults]objectForKey:@"isBusinessUser"]
+#define IsStatus [[NSUserDefaults standardUserDefaults]objectForKey:@"isStatus"]
+//user_id
+#define UserId [[NSUserDefaults standardUserDefaults]objectForKey:@"enter"]
+#define GS_Business_Shop_id [[NSUserDefaults standardUserDefaults] objectForKey:@"GSBusinessUserShopID"]
+
+#define GS_Business_NavBarColor [UIColor colorWithRed:161/255.0 green:161/255.0 blue:161/255.0 alpha:1]
+
+#define Goods_Pleaceholder_Image [UIImage imageNamed:@"ic_load_image_pleaceholder"]
+
+#define GuoBi_Pay_Goods @"exchange_goods"
+
+//用户名
+#define usName  [[NSUserDefaults standardUserDefaults]objectForKey:@"oneGuide"]
+#define IsGuide [[NSUserDefaults standardUserDefaults] objectForKey:@"isGuide"]
+#endif /* PrefixHeader_pch */

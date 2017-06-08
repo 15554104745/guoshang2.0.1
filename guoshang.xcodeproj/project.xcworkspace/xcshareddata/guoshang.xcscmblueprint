@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3c7532cb-0c92-5b42-81d3-2d20865e3155++8344",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "3c7532cb-0c92-5b42-81d3-2d20865e3155++8344" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3c7532cb-0c92-5b42-81d3-2d20865e3155++8344" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A1EDE740-22D5-4EDE-B027-2EF1D2134937",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+
+    "3c7532cb-0c92-5b42-81d3-2d20865e3155++8344" : "guoshang2.0.1\/"
+
+    "3c7532cb-0c92-5b42-81d3-2d20865e3155++8344" : "guoshangUpload\/"
+
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "guoshang",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "guoshang.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.168\/svn\/ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3c7532cb-0c92-5b42-81d3-2d20865e3155++8344"
+    }
+  ]
+}

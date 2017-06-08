@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="storeGoodsCollectionViewCell" id="gTV-IL-0wX" customClass="GSStoreDetailCollectionFlowViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="261"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="261"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KA0-r8-E6w">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="KA0-r8-E6w" secondAttribute="height" multiplier="1:1" id="niY-uz-ymM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="维特克2016款运动裤维特克2016款运动裤维特克2016款运动裤" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FW3-0r-J33">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZC-Wl-dLH">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.94509803920000002" green="0.34901960780000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="185" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQU-80-yVD">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.94509803920000002" green="0.34901960780000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已售2215万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQQ-Ty-nyy">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="FW3-0r-J33" firstAttribute="width" secondItem="KA0-r8-E6w" secondAttribute="width" constant="-10" id="09a-WM-Kkw"/>
+                <constraint firstItem="FW3-0r-J33" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="GtC-xm-EaF"/>
+                <constraint firstItem="KA0-r8-E6w" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IkA-BS-NZ7"/>
+                <constraint firstAttribute="trailing" secondItem="KA0-r8-E6w" secondAttribute="trailing" id="RUn-7t-2dm"/>
+                <constraint firstItem="FQU-80-yVD" firstAttribute="leading" secondItem="pZC-Wl-dLH" secondAttribute="trailing" id="U3V-J6-lFD"/>
+                <constraint firstAttribute="trailing" secondItem="ZQQ-Ty-nyy" secondAttribute="trailing" constant="10" id="WPA-Vl-pTq"/>
+                <constraint firstItem="ZQQ-Ty-nyy" firstAttribute="centerY" secondItem="pZC-Wl-dLH" secondAttribute="centerY" id="e66-e4-aD1"/>
+                <constraint firstItem="pZC-Wl-dLH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="eNQ-EX-c4W"/>
+                <constraint firstItem="FW3-0r-J33" firstAttribute="top" secondItem="KA0-r8-E6w" secondAttribute="bottom" constant="5" id="giz-MR-d4G"/>
+                <constraint firstAttribute="bottom" secondItem="FQU-80-yVD" secondAttribute="bottom" constant="5" id="jrU-tR-1FF"/>
+                <constraint firstAttribute="bottom" secondItem="pZC-Wl-dLH" secondAttribute="bottom" constant="5" id="qzl-gu-NPW"/>
+                <constraint firstItem="KA0-r8-E6w" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rNF-x7-Xh9"/>
+            </constraints>
+            <size key="customSize" width="180" height="259.5"/>
+            <connections>
+                <outlet property="goodsImageView" destination="KA0-r8-E6w" id="fly-ew-w3t"/>
+                <outlet property="goodsPriceLabel" destination="FQU-80-yVD" id="AVA-dW-W9A"/>
+                <outlet property="goodsSellCountLabel" destination="ZQQ-Ty-nyy" id="g6O-pF-SST"/>
+                <outlet property="goodsTitleLabel" destination="FW3-0r-J33" id="b3t-zh-Lbl"/>
+            </connections>
+            <point key="canvasLocation" x="-95" y="-34.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
